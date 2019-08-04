@@ -1,0 +1,43 @@
+body{
+	margin-bottom: 0px;
+	margin-top:  0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: black;
+	color: white;
+	font-family: 'Syncopate', sans-serif;
+	background-image: url(paisagem.png);
+	background-repeat: no-repeat;
+	background-size: 100% 660px;
+	animation-name: aberturapagina;
+	animation-delay: 0.1s;
+	animation-duration: 2s;
+	
+}
+h1{
+	font-size: 250%;
+}
+.selector{
+	margin-left: 5%;
+	margin-top: 12%;
+	width: 20%;
+	
+}
+.mudanca:hover{
+	border-left: 4px solid red;
+	transition-delay: 0.2s;
+	transition-duration: 0.3s;
+
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+@keyframes aberturapagina{
+	from{
+		margin-top: -20%;
+	}
+	to{
+		margin-top: 0%;
+	}
+}

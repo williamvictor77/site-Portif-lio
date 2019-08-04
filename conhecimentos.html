@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portifolio william</title>
+	<link rel="stylesheet" type="text/css" href="cssConhecimento.css">
+	<link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="app">
+	<div>
+		<h3 style="margin-left: 3%">WILLIAM VICTOR</h3>
+		<h6 style="color: rgb(235 29 71);margin-left: 3.2%;margin-top: -1%;">Web Designer e Desenvolvedor Web</h6>
+	</div>
+	
+		<div style="width: 10%;margin-left: 51%;margin-top: -4%"><a href=""><h1 class="mudanca">CONHECIMENTOS</h1></a></div>
+		<div style="width: 9%;margin-left: 65%;margin-top: -1.9%"><a href="Portifolio.html"><h1 class="mudanca">PORTIFÓLIO</h1></a></div>
+		<div style="width: 7%;margin-left: 75%;margin-top: -1.9%"><a href="contato.html"><h1 class="mudanca">CONTATO</h1></a></div>
+	
+		<h5 id="conhecimentos">Meus conhecimentos:</h5>
+		<h6 style="color: rgb(235 29 71);margin-left: 3%">Passe o mouse sobre os icones para saber mais informações.</h6>
+		<div id="positionicones">
+			<a @mouseover="hover = true" @mouseleave="hover = false" href=""><img style="width: 5%;position: absolute;" src="ICONES/html5.png"></a>
+
+			<a @mouseover="subi = true" @mouseleave="subi = false" href=""><img style="width: 7%;position: absolute;margin-left: 6.5%;margin-top: -0.9%" src="ICONES/photoSHOP.png">
+			<a @mouseover="hover3 = true" @mouseleave="hover3 = false" href=""><img style="width: 6%;position: absolute;margin-left: 22%" src="ICONES/vue js.png"></a>
+
+			<a @mouseover="hover2 = true" @mouseleave="hover2 = false" href=""><img style="width: 5.4%;position: absolute;margin-left: 15%" src="ICONES/adobexd.png"></a>
+
+			<a @mouseover="hover4 = true" @mouseleave="hover4 = false" href=""><img style="width: 5.4%;position: absolute;margin-top: 9%;" src="ICONES/github.png"></a>
+
+			<a @mouseover="hover5 = true" @mouseleave="hover5 = false" href=""><img style="width: 7%;position: absolute;margin-top: 9.5%;margin-left: 7%" src="ICONES/php.png"></a>
+
+			<a @mouseover="hover6 = true" @mouseleave="hover6 = false" href=""><img style="width: 7%;position: absolute;margin-top: 8%;margin-left: 14%" src="ICONES/css3.png"></a>
+
+			<a @mouseover="hover7 = true" @mouseleave="hover7 = false" href=""><img style="width: 5.5%;position: absolute;margin-top: 9.2%;margin-left: 22%" src="ICONES/ai.png"></a>
+
+			<a @mouseover="hover8 = true" @mouseleave="hover8 = false" href=""><img style="width: 5.5%;position: absolute;margin-top: 18%;" src="ICONES/indesi.png"></a>
+
+			<a @mouseover="hover9 = true" @mouseleave="hover9 = false" href=""><img style="width: 5%;position: absolute;margin-top: 18%;margin-left: 7.2%" src="ICONES/javascript.png"></a>
+
+			<a @mouseover="hover10 = true" @mouseleave="hover10 = false" href=""><img style="width: 9%;position: absolute;margin-top: 18%;margin-left: 12.5%" src="ICONES/ui.png"></a>
+
+			<a @mouseover="hover11 = true" @mouseleave="hover11 = false" href=""><img style="width: 5.5%;position: absolute;margin-top: 18%;margin-left: 22.2%" src="ICONES/eua.png"></a>
+
+		</div>
+		<div class="aberturalogo" v-if="hover" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8"><b><span style="margin-left: 35%" >HTML 5.</span><p>É uma linguagem de marcação para a World Wide Web (www), portanto é uma tecnologia chave da Internet</p></b>
+		</div>
+		<div class="aberturalogo" v-if="subi" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8"><b><span style="margin-left: 29%" >PHOTOSHOP.</span><p>É um software caracterizado como editor de imagens bidimensionais do tipo raster.É considerado o líder no mercado dos editores de imagem profissionais.</p></b></div>
+		<div class="aberturalogo" v-if="hover2" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 29%" >ADOBE XD.</span><p>É um aplicativo da Adobe Systems que ajuda aos profissionais de design a organizar o fluxo de trabalho para criação de aplicativos móveis e desktop. </p></b></div>
+		<div class="aberturalogo" v-if="hover3" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 35%" >VUE JS.</span><p>É um framework progressivo do JavaScript de código aberto (open source) para a construção de interfaces de usuário. </p></b></div>
+		<div class="aberturalogo" v-if="hover4" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 35%" >GITHUB.</span><p>É um sistema de gerenciamento de projetos e versões de códigos assim como uma plataforma de rede social criado para desenvolvedores. </p></b></div>
+		<div class="aberturalogo" v-if="hover5" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 40%" >PHP.</span><p>É uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML. </p></b></div>
+		<div class="aberturalogo" v-if="hover6" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 40%" >CSS3.</span><p> É onde se define estilos para seu projeto web. Com efeitos de transição, imagem, backgrounds e outros, que dão um estilo novo e elegante a seus projetos web. </p></b></div>
+		<div class="aberturalogo" v-if="hover7" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 28%" >ILUSTRATOR.</span><p> É  o aplicativo de gráficos vetoriais padrão do setor que permite criar logotipos, ícones, desenhos, tipografia e ilustrações complexas para qualquer meio. </p></b></div>
+		<div class="aberturalogo" v-if="hover8" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 28%" >INDESIGN.</span><p> É um software da Adobe Systems desenvolvido para diagramação e organização de páginas. </p></b></div>
+		<div class="aberturalogo" v-if="hover9" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 28%" >JAVASCRIPT.</span><p>É uma linguagem de programação que permite a você criar conteúdo que se atualiza dinamicamente, controlar múltimídias, imagens animadas, e tudo o mais que há de intessante. </p></b></div>
+		<div class="aberturalogo" v-if="hover10" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 40%" >UI/UX.</span><p>São ferramentas que visam melhorar e possibilitar uma experiência única para o usuário. </p></b></div>
+		<div class="aberturalogo" v-if="hover11" style="margin-left: 45%;background-color: black;width: 20%;position: absolute;margin-top: -35%;color: white;opacity: 0.8;height: 550px"><b><span style="margin-left: 8%" >INGLÊS(INTERMEDIÁRIO).</span><p>O ingles adquirido é nível intermediário, focado mais na leitura e interpretação da escrita. </p></b></div>
+	</div>
+		
+
+
+
+
+	</div>
+		
+		
+</body>
+<script type="text/javascript">
+	var app = new Vue({
+ 	 el: '#app',
+ 	 data: {
+   	 	hover: false,
+   	 	subi: false,
+   	 	hover2:false,
+   	 	hover3:false,
+   	 	hover4:false,
+   	 	hover5:false,
+   	 	hover6:false,
+   	 	hover7:false,
+   	 	hover8:false,
+   	 	hover9:false,
+   	 	hover10:false,
+   	 	hover11:false,
+ 	 }
+	})
+</script>
+</html>

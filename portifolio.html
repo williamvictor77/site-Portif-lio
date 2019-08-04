@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portifolio william</title>
+	<link rel="stylesheet" type="text/css" href="cssConhecimento.css">
+	<link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="app">
+		<div>
+			<h3 style="margin-left: 3%">WILLIAM VICTOR</h3>
+			<h6 style="color: rgb(235 29 71);margin-left: 3.2%;margin-top: -1%;">Web Designer e Desenvolvedor Web</h6>
+		</div>
+	
+		<div style="width: 10%;margin-left: 51%;margin-top: -4%"><a href="conhecimentos.html"><h1 class="mudanca">CONHECIMENTOS</h1>
+		</a></div>
+		<div style="width: 9%;margin-left: 65%;margin-top: -1.9%"><a href=""><h1 class="mudanca">PORTIFÓLIO</h1></a>
+		</div>
+		<div style="width: 7%;margin-left: 75%;margin-top: -1.9%"><a href="contato.html"><h1 class="mudanca">CONTATO</h1></a>
+		</div>
+	
+		<h5 id="conhecimentos">Projetos Concluidos:</h5>
+		<div id="projetos">
+			<div><img  class="div-de-projetos" v-on:click="aparecer = true"  style="width: 16.8%;position: absolute;margin-top: -4.7%;margin-left: 30%" src="imagens/Dvalentina.png"></div>
+			<img  class="div-de-projetos" v-on:click="aparecer2 = true"  style="width: 16.7%;margin-left: 30%;margin-top: 12%;position: absolute;height: 35.2%" src="imagens/explosão.png">
+			<img  class="div-de-projetos" v-on:click="aparecer3 = true" style="width: 30%;height: 35%; margin-top: 12.2%;position: absolute;margin-left: 0%" src="imagens/gifFacilite.gif">
+			<img  class="div-de-projetos" v-on:click="aparecer4 = true" style="width: 30%;margin-top: -4.7%;position: absolute;margin-left: 0%" src="imagens/gifadobe.gif">			
+
+		</div>
+		<div class="abrirprojetos" v-if="aparecer">
+			<img v-on:click ="aparecer = false" style="width: 4%;float: right;margin-right: 2%;margin-top: 1%" src="ICONES/sair.png">
+			<div style="margin-left: 11%;margin-top: 1%">
+				<img style="width: 43%" src="imagens/Dvalentina.png">
+				<img style="width: 43%" src="imagens/loja.png">
+				<h5 style="color: black;margin-left: 0%">logo e imagem para instagram feito para loja virtual e fisica,d'valentina.</h5>
+			</div>
+		</div>
+		<div class="abrirprojetos" v-if="aparecer2">
+			<img v-on:click ="aparecer2 = false" style="width: 4%;float: right;margin-right: 2%;margin-top: 1%" src="ICONES/sair.png">
+			<div style="margin-left: 11%;margin-top: 1%">
+				<img style="width: 42%;margin-left: 23%" src="imagens/explosão.png">
+				<h5 style="color: black;margin-left: -3%">Logo feito para a empresa facilite sua vida, para ser colocada no instagram.</h5>
+			</div>
+		</div>
+		<div class="abrirprojetos" v-if="aparecer3">
+			<img v-on:click ="aparecer3 = false" style="width: 4%;float: right;margin-right: 2%;margin-top: 1%" src="ICONES/sair.png">
+			<div style="margin-left: 11%;margin-top: 1%">
+				<img style="width: 70%;margin-left: 8%" src="imagens/sitefacilite.png">
+				<h5 style="color: black;margin-left: 0%">Site <a style="color: black" href="https://facilitesuavida.000webhostapp.com/" target="_blank"><u>facilite sua vida</u></a> feito para vendas de infoprodutos,apresentando vários<br><br> nichos de conhecimentos.</h5>
+			</div>
+		</div>
+		<div class="abrirprojetos" v-if="aparecer4">
+			<img v-on:click ="aparecer4 = false" style="width: 4%;float: right;margin-right: 2%;margin-top: 1%" src="ICONES/sair.png">
+			<div style="margin-left: 11%;margin-top: 1%">
+				<img style="width: 60%;margin-left: 13%" src="imagens/gifadobe.gif">
+				<h5 style="color: black;margin-left: 0%">Site Portifolio,com seus prototipos feitos em adobe xd,para saber o codigo visite o link do github</h5>
+			</div>
+		</div>
+
+	</div>		
+</body>
+<script type="text/javascript">
+	var app = new Vue({
+ 	 el: '#app',
+ 	 data: {
+   	 	aparecer:false,
+   	 	aparecer2:false,
+   	 	aparecer3:false,
+   	 	aparecer4:false,
+ 	 }
+	})
+</script>
+</html>

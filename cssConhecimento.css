@@ -1,0 +1,109 @@
+body{
+	margin-bottom: 0px;
+	margin-top:  0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: black;
+	color: white;
+	font-family: 'Syncopate', sans-serif;
+	background-image: url(paisagem.png);
+	background-repeat: no-repeat;
+	background-size: 100% 660px;
+	animation-name: aberturapagina;
+	animation-delay: 0s;
+	animation-duration: 2s;
+	
+}
+h1{
+	font-size: 90%;
+}
+.selector{
+	margin-left: 35%;
+	margin-top: -5%;
+	
+}
+.mudanca:hover{
+	color: rgb(235 29 71);
+	transition-delay: 0s;
+	transition-duration: 0.3s;
+
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+#conhecimentos{
+	margin-left: 3%;
+	margin-top: 5%;
+}
+#positionicones{
+	margin-left: 5%;
+	margin-top: 4%;
+	
+	width: 30%;
+	height: 400px;
+}
+.aberturalogo{
+	padding: 2%;
+	text-align: justify;
+	border-radius: 2.4%;
+	animation-name: logoabertura;
+	animation-duration: 1.5s;
+	animation-delay: 0.2;
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards;
+}
+@keyframes logoabertura{
+	from{
+		height: 0px;
+	}
+	to{
+		height: 120px;
+		
+	}
+}
+p{
+	font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+@keyframes aberturapagina{
+	from{
+		margin-top: -20%;
+	}
+	to{
+		margin-top: 0%;
+	}
+}
+#projetos{
+	margin-left: 27%;
+	margin-top: 6%;
+	
+}
+#projetos img{
+	border-radius: 10px;
+	
+}
+#projetos img:hover{
+	filter: brightness(70%);
+}
+
+.abrirprojetos{
+	margin-left: 20%;
+	background-color: white;
+	width: 65%;
+	position: absolute;
+	margin-top:-4.7%;
+	height: 460px;
+	animation-name: animacao-projeto;
+	animation-delay: 0s;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes animacao-projeto{
+	from{
+		transform: scale(0,0);
+	}
+	to{
+		transform: scale(1,1);
+	}
+}
